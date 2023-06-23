@@ -15,6 +15,8 @@ FROM scratch
 
 COPY --from=0 /app/myapp .
 
+RUN chmod +x /myapp
+
 EXPOSE 1323
 
 ENV TZ=Asia/Bangkok
